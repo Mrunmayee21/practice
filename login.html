@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                height:99vh;
+                font-family:fira sans;
+                font-size:16px;
+                background: linear-gradient(to bottom right, #afd8fa, #aed9fa, #c6e4fb, #deeffd, #c9dce2, #dae7eb) no-repeat;
+            }
+            div{
+                margin:10px 5px 0px 10px;
+            }
+
+            .loginbox{
+                position:relative;
+                margin-top:8%;
+                margin-left:-50%;
+                height:100%;
+                width:100%;
+                background-color:rgb(255, 255, 255);
+                z-index:1;
+                
+            }
+            .about{
+                position:relative;
+                margin-top:15%;
+                margin-left:35%;
+                height:87%;
+                width:60%;
+                background-color:#474747;
+                color:#d3d3d3;
+                z-index:2;
+                align-self: center;               
+
+            } 
+            
+            hr{
+                background-color:rgb(160, 163, 167);
+                margin-top:5px;
+                margin-right:2px;
+            }
+
+
+            /* style for grid1 of main login box*/
+            .main_grid{
+                display:grid;
+                height: 70vh;
+                width: 90vw;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;   
+                
+            }
+            /* style for grid in Contact Us box */
+            .contact_grid{
+                display:grid;
+                margin-top:6%;
+                grid-template-columns:5% 95%;
+                grid-template-rows:repeat(4, 1fr);
+                align-items:stretch;
+                grid-column-gap: 2%;
+                
+                
+            }
+            .iconmargin{
+                margin-top:60%;
+                margin-left:15%;
+            }
+
+            .iconcol{
+                color:black;
+            }
+
+
+            input[type=text] {
+                padding: 15px 15px;
+                border:1px solid #d9d9d9;
+                box-sizing: border-box;   
+                width: 80%; 
+                font-size: 18px; 
+                box-shadow: 2px 2px 5px #d9d9d9;
+                margin-bottom: 15px;                        
+            }
+
+             .btn, .btn:link, .btn:visited { 
+                background: linear-gradient(to top left, #ff9d52,#ffb67f);
+                color: #000000;
+                border:none;
+                margin-top:5%;
+                margin-left:25%;
+                padding: 12px;
+                width: 30%;
+                font-family:fira sans;
+                font-size:16px;
+                
+                
+            }      
+            .btn:hover {                
+                box-shadow: 10px 10px 15px #ff8c33 inset, 2px 2px 2px #948d88;
+                
+            }      
+
+            a {
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 18px;
+                display: block;
+                margin: 20px 60px;
+                width: 20%;
+            }  
+
+
+            .fieldmargin{
+                margin-left: 52%;
+                margin-top:7%;
+            }
+
+            input{
+                font-family:FontAwesome;
+            }        
+            .iconcol2{
+                color:rgb(160, 163, 167);
+                font-size:80px;
+                margin-left:65%;
+                margin-top:5%;
+            }
+
+
+        
+        </style>
+    </head>
+    <body>
+        <div class="main_grid">
+            <div class="about">
+                <div >
+                    <span style="font-size:18px;">Contact Us</span> 
+                    <hr>
+                    <div class="contact_grid">
+                        <div class="fa fa-map-marker iconmargin iconcol"></div>
+                        <div>Electronics Niketan, 6, CGO Complex, Lodhi Road, New Delhi - 110000</div>
+                        <div class="fa fa-envelope iconmargin iconcol"></div>
+                        <div>webmaster@meity.gov.in</div>
+                        <div class="fa fa-phone iconmargin iconcol"></div>
+                        <div>+91-11-24301851</div>
+                        <div class="fa fa-fax iconmargin iconcol"></div>
+                        <div>+91-11-24364799</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="loginbox">
+                <i class="fa fa-user-circle-o iconcol2"></i>
+                <div class="fieldmargin">
+                    <input type="text" placeholder="&#xf2bd;   Username">
+                    <input type="text" placeholder=" &#xf023;    Password">
+                    <div><button class="btn">Submit</button></div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
