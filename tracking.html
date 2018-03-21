@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {
+            margin: 0;
+        }
+        nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            position: sticky;
+            align-items: center;
+            text-align: center;
+            vertical-align: center;
+            box-shadow: 0px 0.5px 5px #38393A;
+            background: #38393A;
+        }
+
+        .dashboard {
+            grid-column: 1;
+
+        }
+
+        .forms {
+            grid-column: 2;
+        }
+
+        .view_repo {
+            grid-column: 3;
+        }
+
+        .profile {
+            grid-column: 4;
+        }
+
+        .navlinks {
+            font-family: 'fira sans';
+            display: block;
+            text-decoration: none;
+            padding: 5%;
+            color: #979797;
+            text-shadow: 0px 0.05px 0.5px black;
+
+        }
+
+        @media (min-width:600px) {
+            .navlinks {
+                padding: 3.5%;
+                font-size: 110%;
+            }
+        }
+
+        .right {
+            box-shadow: -5px 0 5px -5px black;
+        }
+
+        @media (max-width:599px) {
+            .navlinks {
+                padding: 3.5%;
+                font-size: 80%;
+            }
+        }
+        .circle{
+            display:grid;
+            grid-template-columns:repeat(9,minmax(10px,1fr));
+            grid-template-rows:repeat(1,minmax(10px,1fr));
+            padding-top:20px;
+            height:10vh;
+            width:100vm;
+            justify-items: center;
+        }
+        .center{
+            grid-column:5;
+            border:10px solid #B3DBFB;
+            background-color:#0A6EBE;
+            height:70px;
+            width:70px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .small{
+            grid-column:5;
+            background-color:black ;
+            height:80%;
+            width:50%;
+            border-radius: 50%;
+            display: inline-block;
+            justify-items:center;
+          
+        }
+   
+ 
+        </style>
+        </head>
+        <body>
+    <header>
+        <nav class="container">
+            <div class="dashboard">
+                <a href="#" class="navlinks right">
+                    <i class="fa fa-dashboard">&nbsp;</i>Dashboard</a>
+            </div>
+            <div class="forms">
+                <a href="#" class="navlinks right">
+                    <i class="fa fa-server">&nbsp;</i>Forms</a>
+            </div>
+            <div class="view_repo">
+                <a href="#" class="navlinks right">
+                    <i class="fa fa-eye">&nbsp;</i>View Repository</a>
+            </div>
+            <div class="profile">
+                <a href="#" class="navlinks right">
+                    <i class="fa fa-user">&nbsp;</i>Profile</a>
+            </div>
+        </nav>
+        <main>
+            <div class="circle">
+                <div class="center">
+                </div>
+            </div>
+        </main>
+    </header>
+    </body>
+    </html>
