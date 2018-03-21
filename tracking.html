@@ -25,7 +25,6 @@
 
         .dashboard {
             grid-column: 1;
-
         }
 
         .forms {
@@ -70,28 +69,25 @@
         /*nav bar ends here*/
 
         /*css for circular forms starts here*/
-        .circle{
+        .form_no_grid{
             display:grid;
             grid-template-columns:repeat(9,minmax(10px,1fr));
             grid-template-rows:repeat(1,minmax(10px,1fr));
-            padding-top:20px;
+            padding-top:2%;
             height:10vh;
             width:100vm;
-            justify-items: center;
+            justify-content: center;
         }
-        .circle_css{
+        .rectangle_css{
             border:8px solid #B3DBFB;
             background-color:#0A6EBE;
             height:7vh;
-            width:4vw;
-            border-radius: 50%;
+            width:6vw;
+            border-radius: 5%;
             display: inline-block;
+         
         }
-        .center{
-            grid-column:5;
-            opacity:100%;
-           
-        } 
+       
         .one{
             grid-column:1;
             opacity:0.20;
@@ -108,6 +104,39 @@
             grid-column:4;
             opacity:0.75;
         } 
+        .five{
+            grid-column:5;
+            opacity:100%;
+        } 
+        .six{
+            grid-column:6;
+            opacity:0.75;
+        } 
+        .seven{
+            grid-column:7;
+            opacity:0.60;
+        } 
+        .eight{
+            grid-column:8;
+            opacity:0.35;
+        } 
+        .nine{
+            grid-column:9;
+            opacity:0.20;
+        } 
+        .form_num {
+            word-wrap: break-word;
+            padding:2px;
+        }
+        .form_links{
+            font-family:'fira sans';
+            color:#38393A;
+            font-weight:bold;
+            text-decoration:none;
+            text-align:center;
+            font-size: 16px;
+
+        }
        
         /*css for circle forms ends here*/
         </style>
@@ -133,16 +162,26 @@
             </div>
         </nav>
         <main>
-            <div class="circle">
-                <div class="center circle_css">
+            <div class="form_no_grid">
+                
+                <div class="one rectangle_css">
+                        <span class="form_num form_links">12345</span>
                 </div>
-                <div class="one circle_css">
+                <div class="two rectangle_css">
                 </div>
-                <div class="two circle_css">
+                <div class="three rectangle_css">
                 </div>
-                <div class="three circle_css">
+                <div class="four rectangle_css">
                 </div>
-                <div class="four circle_css">
+                <div class="five rectangle_css">
+                </div>
+                <div class="six rectangle_css">
+                </div>
+                <div class="seven rectangle_css">
+                </div>
+                <div class="eight rectangle_css">
+                </div>
+                <div class="nine rectangle_css">
                 </div>
               
             </div>

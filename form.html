@@ -10,17 +10,14 @@
         body {
             margin: 0;
         }
-
         /*styling for the nav bar*/
-
-        nav {
+        .navigation{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: auto;
-            position: sticky;
             align-items: center;
             text-align: center;
             vertical-align: center;
+            height:6vh;
             box-shadow: 0px 0.5px 5px #38393A;
             background: #38393A;
         }
@@ -69,35 +66,33 @@
                 font-size: 80%;
             }
         }
-
+        /*styling of nav bar ends here*/
         /*styling of the form elements*/
 
-        main {
-            position: relative;
-        }
-
         .wrapper {
+            margin-top: 2.7%;
             display: grid;
             /* grid-template-columns:auto auto auto; */
-            grid-template-columns: repeat(3, minmax(20vw, 1fr));
-            grid-template-rows: repeat(3,minmax(10vw, 1fr));
-            grid-column-gap: 5%;
-            grid-row-gap: 70px;
-            padding: 3%;
+            grid-template-columns: repeat(3, minmax(20vw,30vw));
+            grid-template-rows: repeat(3,minmax(10vh,20vh));
+            grid-column-gap: 3vw;
+            grid-row-gap: 9vh;
             height: 65vh;
-            width: 100vm;
+            width: 100vw;
             font-family: 'fira sans';
+            justify-content: center;
             
         }
 
         .wrapper>div {
             height: 100%;
             width: 90%;
-            padding: 20px;
+            padding: 4%;
             border-radius: 10px;
             box-shadow: 0px 1px 10px #b3b3b3;
             background-color:rgba(179,179,179,0.39);
             font-family: "fira sans";
+            justify-content: center;
         }
 
         /*inside box*/
@@ -105,12 +100,12 @@
         .overlay {
             height: minmax(10vh, 30vh);
             display: grid;
-            
             height: 100%;
             width: 100%;
             /* grid-template-columns:auto auto auto auto; */
             grid-template-columns: repeat(4, minmax(10px, 1fr));
             grid-template-rows: repeat(2, minmax(10px, 1fr));
+            justify-content: center;
         }
 
         .blue {
@@ -129,7 +124,7 @@
             box-shadow: 0px 1px 2px rgba(71, 71, 71, 0.55);
             text-align:center;
             vertical-align:middle;
-            
+            justify-content: center;
         }
 
         /*button styling*/
@@ -227,7 +222,8 @@
             font-weight: bold;
             color:#38393A;
             text-align:center;
-            font-size: 20px;
+            justify-content:center;
+            font-size: 18px;
         }
         .value{
             font-family:'fira sans';
@@ -235,7 +231,7 @@
             text-align:center;
             font-weight:light;
             text-decoration:none;
-            font-size: 20px;
+            font-size: 18px;
         }
         .form_links{
             font-family:'fira sans';
@@ -250,12 +246,46 @@
             font-size:20px;
             padding-top: 12px;
         }
+
+        @media (max-width:1100px) {
+            .fa_dark {
+            color:#38393A;
+            font-size:10px;
+            padding-top: 12px;
+            }
+            .form_links{
+            font-family:'fira sans';
+            color:#38393A;
+            font-weight:bold;
+            text-decoration:none;
+            text-align:center;
+            font-size: 12px;
+        }
+        .title{
+            font-family:'fira sans';
+            text-decoration:underline;
+            font-weight: bold;
+            color:#38393A;
+            text-align:center;
+            justify-content:center;
+            font-size: 15px;
+        }
+        .value{
+            font-family:'fira sans';
+            color:#38393A;
+            text-align:center;
+            font-weight:light;
+            text-decoration:none;
+            font-size: 15px;
+        }
+        }
+        
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="container">
+        <nav class="navigation">
             <div class="dashboard">
                 <a href="#" class="navlinks right">
                     <i class="fa fa-dashboard">&nbsp;</i>Dashboard</a>
@@ -274,7 +304,7 @@
             </div>
         </nav>
     </header>
-    <main class="wrapper">
+    <div class="wrapper">
         <div class="overlay">
             <div class="form_no  grey">
                 <span class="form_num  title ">FORM NO</span>
@@ -402,7 +432,7 @@
             <div class="three inner_grid_dark"></div>
             <div class="four inner_grid_dark"></div>
         </div>
-    </main>
+    </div>
     <footer class="button_grid">
         <input type="text" value="SEARCH" class="btn-1 btn"></input>
     </footer>
