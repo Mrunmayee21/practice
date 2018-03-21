@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-body {
+        /*navigation bar css*/
+        body {
             margin: 0;
         }
         nav {
@@ -66,6 +67,9 @@ body {
                 font-size: 80%;
             }
         }
+        /*nav bar ends here*/
+
+        /*css for circular forms starts here*/
         .circle{
             display:grid;
             grid-template-columns:repeat(9,minmax(10px,1fr));
@@ -75,27 +79,37 @@ body {
             width:100vm;
             justify-items: center;
         }
+        .circle_css{
+            border:8px solid #B3DBFB;
+            background-color:#0A6EBE;
+            height:7vh;
+            width:4vw;
+            border-radius: 50%;
+            display: inline-block;
+        }
         .center{
             grid-column:5;
-            border:10px solid #B3DBFB;
-            background-color:#0A6EBE;
-            height:70px;
-            width:70px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        .small{
-            grid-column:5;
-            background-color:black ;
-            height:80%;
-            width:50%;
-            border-radius: 50%;
-            display: inline-block;
-            justify-items:center;
-          
-        }
-   
- 
+            opacity:100%;
+           
+        } 
+        .one{
+            grid-column:1;
+            opacity:0.20;
+        } 
+        .two{
+            grid-column:2;
+            opacity:0.35;
+        } 
+        .three{
+            grid-column:3;
+            opacity:0.60;
+        } 
+        .four{
+            grid-column:4;
+            opacity:0.75;
+        } 
+       
+        /*css for circle forms ends here*/
         </style>
         </head>
         <body>
@@ -120,8 +134,17 @@ body {
         </nav>
         <main>
             <div class="circle">
-                <div class="center">
+                <div class="center circle_css">
                 </div>
+                <div class="one circle_css">
+                </div>
+                <div class="two circle_css">
+                </div>
+                <div class="three circle_css">
+                </div>
+                <div class="four circle_css">
+                </div>
+              
             </div>
         </main>
     </header>
