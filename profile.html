@@ -68,7 +68,16 @@
                 font-size: 80%;
             }
         }
-
+        @media (max-width:1300px) {
+            .profile_image{
+    grid-column:1;
+    grid-row:3/5;
+    font-size:70%;
+    color:#B3B3B3;
+    justify-self: center;
+    align-self:center;
+}   
+        }
 .main_grid{
     display:grid;
     grid-template-columns: 10vw 80vw 10vw;
@@ -136,12 +145,112 @@
 .name{
     grid-column:2;
     grid-row:1;
+  
+}
+.details{
     color:#38393A;
     justify-self:start;
     align-self:end;
     font-size:25px;
     padding-left:2%;
 }
+.username{
+    grid-column: 2;
+    grid-row:2;
+
+}
+.email{
+    grid-column: 2;
+    grid-row:3;
+
+}
+.contact{
+    grid-column: 2;
+    grid-row:4;
+
+}
+.department{
+    grid-column: 2;
+    grid-row:5;
+
+}
+.role{
+    grid-column: 2;
+    grid-row:6;
+
+}
+.name_details{
+    grid-column:2;
+    grid-row:1;
+    width:70%;
+    align-self:center;
+    justify-self:end;
+}
+.username_details{
+    grid-column:2;
+    grid-row:2;
+    width:70%;
+    align-self:center;
+    justify-self:end;
+}
+.email_details{
+    grid-column:2;
+    grid-row:3;
+    width:70%;
+    align-self:center;
+    justify-self:end;
+}
+.contact_details{
+    grid-column:2;
+    grid-row:4;
+    width:70%;
+    align-self:center;
+    justify-self:end;
+}
+.department_details{
+    grid-column:2;
+    grid-row:5;
+    width:70%;
+    align-self:center;
+    justify-self:end;
+}
+.role_details{
+    grid-column:2;
+    grid-row:6;
+    width:70%;
+    align-self:center;
+    justify-self:end;
+}
+.btn-1 {
+            background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+
+            }
+
+        .btn:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+        }
+
+        .btn {
+            padding: 10px;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: black;
+            font-family: 'fira sans';
+            /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+            box-shadow: 0 0 20px #F7A666;
+            border-radius: 10px;
+            grid-column: 3;
+            border: 2px;
+            width: 70%;
+            margin-top: 10%;
+            margin-left:4%;
+        }
+     
     </style>
     </head>
     <body>
@@ -171,8 +280,7 @@
                 <div class="profile_image">
 
 <svg width="228px" height="301px" viewBox="0 0 228 301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
+   
     <defs>
         <rect id="path-1" x="317" y="216" width="220" height="293" rx="6"></rect>
         <filter x="-3.2%" y="-1.7%" width="106.4%" height="104.8%" filterUnits="objectBoundingBox" id="filter-2">
@@ -214,8 +322,21 @@
 </svg>
                 </div>
                 <div class="line"></div>
-                <div class="name">INPUT</div>
+                <div class="name details">NAME</div>
+                <div class="name_details"><span><input type="text" value="Anonymous Username" class="btn btn-1"></span></div>
+                <div class="username details">USERNAME</div>
+                <div class="username_details"><span><input type="text" value="Anonuser" class="btn btn-1"></span></div>
+                <div class="email details">EMAIL</div>
+                <div class="email_details"><span><input type="text" value="email@gmail.com" class="btn btn-1"></span></div>
+                <div class="contact details">CONTACT</div>
+                <div class="contact_details"><span><input type="text" value="9475638954" class="btn btn-1"></span></div>
+                <div class="department details">DEPARTMENT</div>
+                <div class="department_details"><span><input type="text" value="Ministry of HRD" class="btn btn-1"></span></div>
+                <div class="role details">ROLE</div>
+                <div class="role_details"><span><input type="text" value="Group Coordinator" class="btn btn-1"></span></div>
             </div>
+           
         </div>
+        
     </body>
     </html>
