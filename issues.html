@@ -18,7 +18,7 @@
             vertical-align: center;
             height:8vh;
             box-shadow: 0px 0.5px 5px #38393A;
-            background: #2e2e2e;
+            background: #2196F3;
         }
         
         .edited{
@@ -26,7 +26,7 @@
             grid-column:4;
             display:grid;
             grid-template-columns:repeat(4, 1fr);
-            color:#979797;
+            color:#38393a;
             width:37%;
             padding-right: 2%;
             padding-bottom: 2%;
@@ -122,11 +122,13 @@
         .issuebox{
             grid-column:2;
             grid-row:2;
+            border-radius: 14px;
         }
         .issue_grid{
             display:grid;
             grid-template-rows: 10% repeat(8, 1fr);
             grid-template-columns:1fr 20% 20% ;
+            /* border-radius: 10px; */
             box-shadow:2px 2px 2px #979797;
         }
         .rows{
@@ -155,9 +157,13 @@
             color:#586069;
             padding-left:2.5%;
         }
+        .round-border{
+            border-radius:10px;
+        }
         .heading{
             grid-row:1;
             display:flex;
+            /* border-radius: 5px; */
             background-color: #e0e0e0; 
             align-items:center;
             text-align:center;
