@@ -70,7 +70,6 @@
         /*styling of the form elements*/
 
         .wrapper {
-            margin-top: 2.7%;
             display: grid;
             /* grid-template-columns:auto auto auto; */
             grid-template-columns: repeat(3, minmax(20vw,30vw));
@@ -280,7 +279,62 @@
             font-size: 15px;
         }
         }
+        .filter_grid{
+            display:grid;
+            grid-template-columns:repeat(6,minmax(10vw,1fr));
+            height:8vh;
+            width:100vw;
+        }
+
+        .departmenta{
+            grid-column:2;
+            grid-row:1;
+            justify-self:center;
+            align-self: center;
+        }
+        .departmentb{
+            grid-column:3;
+            grid-row:1;
+            justify-self:center;
+            align-self: center;
+        }
+        .departmentc{
+            grid-column:4;
+            grid-row:1;
+            justify-self:center;
+            align-self: center;
+        }
+        .departmentd{
+            grid-column:5;
+            grid-row:1;
+            justify-self:center;
+            align-self: center;
+        }
+        @media (max-width:1400px) {
+            .fa_dark {
+            color:#38393A;
+            font-size:10px;
+            padding-top: 10px;
+            }
+            .form_links{
+            font-family:'fira sans';
+            color:#38393A;
+            font-weight:bold;
+            text-decoration:none;
+            text-align:center;
+            font-size: 10px;
+        }
+        .title{
+            font-family:'fira sans';
+            text-decoration:underline;
+            font-weight: bold;
+            color:#38393A;
+            text-align:center;
+            justify-content:center;
+            font-size: 14px;
+        }
         
+    }
     </style>
 </head>
 
@@ -305,6 +359,12 @@
             </div>
         </nav>
     </header>
+    <div class="filter_grid">
+        <div class="departmenta"><span><i class="fa fa-check" aria-hidden="true"></i></span><span class="value">DEPARTMENT A</span></div>
+        <div class="departmentb"><span><i class="fa fa-check" aria-hidden="true"></i></span><span class="value">DEPARTMENT B</span></div>
+        <div class="departmentc"><span><i class="fa fa-check" aria-hidden="true"></i></span><span class="value">DEPARTMENT C</span></div>
+        <div class="departmentd"><span><i class="fa fa-check" aria-hidden="true"></i></span><span class="value">DEPARTMENT D</span></div>
+    </div>
     <div class="wrapper">
         <div class="overlay">
             <div class="form_no  grey">
